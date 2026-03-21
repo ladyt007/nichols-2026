@@ -874,13 +874,52 @@
   <h2 class="s-title">Join the Campaign and<br>Help Bring Solutions to Queens</h2>
   <p class="s-sub">There is an answer — and it starts with people like you showing up.</p>
   <div class="vol-grid">
-   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQDYjOQ4I2un1iV8rZgM8rPEtNxqcwUDCILFeuovzSOezNDA/viewform?embedded=true" width="640" height="1933" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <form class="v-form" id="volunteerForm">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+      <input type="hidden" name="subject" value="New Volunteer Sign-Up – Nichols 2026">
+      <input type="hidden" name="from_name" value="Nichols 2026 Volunteer Form">
+      <div class="f-row">
+        <div class="f-g">
+          <label for="vol-first">First Name</label>
+          <input type="text" id="vol-first" name="first_name" placeholder="Jane" required>
+        </div>
+        <div class="f-g">
+          <label for="vol-last">Last Name</label>
+          <input type="text" id="vol-last" name="last_name" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="f-g">
+        <label for="vol-email">Email Address</label>
+        <input type="email" id="vol-email" name="email" placeholder="jane@email.com" required>
+      </div>
+      <div class="f-g">
+        <label for="vol-phone">Phone Number</label>
+        <input type="tel" id="vol-phone" name="phone" placeholder="(718) 555-0000">
+      </div>
+      <div class="f-g">
+        <label for="vol-role">How Would You Like to Help?</label>
+        <select id="vol-role" name="role" required>
+          <option value="" disabled selected>Select a role...</option>
+          <option value="Phone Banking">Phone Banking</option>
+          <option value="Door-to-Door Canvassing">Door-to-Door Canvassing</option>
+          <option value="Digital Outreach">Digital Outreach</option>
+          <option value="Event Support">Event Support</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="f-g">
+        <label for="vol-msg">Message (Optional)</label>
+        <textarea id="vol-msg" name="message" placeholder="Tell us about yourself..."></textarea>
+      </div>
+      <button type="submit" class="v-submit">Sign Up to Volunteer →</button>
+    </form>
     <div class="v-ways">
       <h3>Ways to Make a Difference</h3>
       <div class="way"><div class="w-icon">📞</div><div class="w-info"><h4>Phone Banking</h4><p>Call District 32 voters from home or the campaign office to share Paul's vision for Queens.</p></div></div>
       <div class="way"><div class="w-icon">🚶</div><div class="w-info"><h4>Door-to-Door Canvassing</h4><p>Walk the neighborhoods of District 32 and connect with voters face to face.</p></div></div>
       <div class="way"><div class="w-icon">📱</div><div class="w-info"><h4>Digital Outreach</h4><p>Share updates, manage social media, and help the campaign reach voters online.</p></div></div>
       <div class="way" style="border-bottom:none;margin-bottom:0;padding-bottom:0;"><div class="w-icon">🎉</div><div class="w-info"><h4>Event Support</h4><p>Help run town halls, community meetings, and fundraisers across the district.</p></div></div>
+    </div>
   </div>
 </section>
 
@@ -946,14 +985,44 @@
       </div>
       <div class="con-det">
         <div class="con-ico">📧</div>
-        <div><label>Email</label><span>info@nichols2026.com</span></div>
+        <div><label>Email</label><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93fafdf5fcd3fdfaf0fbfcffe0a1a3a1a5bdf0fcfe">[email&#160;protected]</a></span></div>
       </div>
       <div class="con-det">
         <div class="con-ico">📍</div>
         <div><label>Campaign HQ</label><span>District 32, Queens, New York</span></div>
       </div>
     </div>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvAI5GGPI4-s8VlDZtW0tRhk92XJs35hsK_2-gTk7xkYEEwA/viewform?embedded=true" width="640" height="1095" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <form class="con-form" id="contactForm">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+      <input type="hidden" name="subject" value="New Contact Message – Nichols 2026">
+      <input type="hidden" name="from_name" value="Nichols 2026 Contact Form">
+      <div class="f-row">
+        <div class="f-g">
+          <label for="con-name">Name</label>
+          <input type="text" id="con-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="f-g">
+          <label for="con-email">Email</label>
+          <input type="email" id="con-email" name="email" placeholder="your@email.com" required>
+        </div>
+      </div>
+      <div class="f-g">
+        <label for="con-subject">Subject</label>
+        <select id="con-subject" name="subject_type" required>
+          <option value="General Inquiry" selected>General Inquiry</option>
+          <option value="Platform Question">Platform Question</option>
+          <option value="Press Inquiry">Press Inquiry</option>
+          <option value="Partnership Request">Partnership Request</option>
+          <option value="District 32 Concern">District 32 Concern</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="f-g">
+        <label for="con-msg">Message</label>
+        <textarea id="con-msg" name="message" placeholder="Your message..." required></textarea>
+      </div>
+      <button type="submit" class="c-submit">Send Message →</button>
+    </form>
   </div>
 </section>
 
@@ -995,11 +1064,46 @@
 </footer>
 
 <div class="toast" id="toast"></div>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function showToast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
   function selAmt(b){document.querySelectorAll('.amt').forEach(x=>x.classList.remove('active'));b.classList.add('active');}
-  function handleVol(e){e.preventDefault();showToast('Thank you! We will be in touch.');e.target.reset();}
-  function handleCon(e){e.preventDefault();showToast('Message sent! We will respond within 24hrs.');e.target.reset();}
+  const WEB3FORMS_KEY = "84f069d6-f627-4d54-a0c0-6a82db9a7598"; // placeholder – replace with your real key
+
+  async function submitForm(formEl, successMsg) {
+    const btn = formEl.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    // Set the real access key
+    formEl.querySelector('input[name="access_key"]').value = WEB3FORMS_KEY;
+    const data = new FormData(formEl);
+    // Append recipient
+    data.append('to', 'info@nichols2026.com');
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
+      const json = await res.json();
+      if (json.success) {
+        showToast(successMsg);
+        formEl.reset();
+      } else {
+        showToast('Something went wrong. Please try again.');
+      }
+    } catch(err) {
+      showToast('Network error. Please try again.');
+    }
+    btn.textContent = originalText;
+    btn.disabled = false;
+  }
+
+  document.getElementById('volunteerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    submitForm(this, 'Thank you! We will be in touch soon.');
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    submitForm(this, 'Message sent! We will respond within 24 hours.');
+  });
   const obs=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:.08});
   document.querySelectorAll('.p-card,.n-card,.ev-item,.way,.cred-item,.g-item').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(16px)';el.style.transition='opacity .55s ease,transform .55s ease';obs.observe(el);});
 
@@ -1043,19 +1147,4 @@
     };
 
     window.addEventListener('resize', () => {
-      updatePerView();
-      buildDots();
-      goTo(Math.min(cur, maxIdx()));
-    });
-
-    buildDots();
-
-    // Auto-advance every 5s
-    setInterval(() => {
-      goTo(cur >= maxIdx() ? 0 : cur + 1);
-    }, 5000);
-  })();
-
-</script>
-</body>
-</html>
+      updatePerView
